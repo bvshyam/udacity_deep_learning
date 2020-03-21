@@ -1,0 +1,13 @@
+predictions[0].T.shape
+
+test_targets['cnt'].values.shape
+
+MSE(network.run(test_features).T*std + mean,test_targets['cnt'].values*std + mean)
+
+MSE(network.run(train_features).T*std + mean,train_targets['cnt'].values*std + mean)
+
+ MSE(network.run(train_features).T, train_targets['cnt'].values)
+
+network.run(train_features).T.shape
+
+ train_targets['cnt'].values.shape
